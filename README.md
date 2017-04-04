@@ -1,3 +1,3 @@
-# FS Blog
+# FS Company
 
-A WordPress Theme for your blog, made with the From Scratch starter theme by Thomas Villain
+A WordPress Child Theme of FS-Blog for your company. Made with From Scratch, a starter theme by Thomas Villain
