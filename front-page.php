@@ -51,8 +51,14 @@ get_header(); ?>
 								<?php endwhile; ?>
 		
 							</div>
-		
-							<a href="#front_cpt" class="scroll-btn"><?php _e('Scroll Down','fs-company'); ?></a>
+							
+							<?php if(get_theme_mod('display_cpt') == true) { 
+								$scroll = '#front_cpt';
+								} else {
+								$scroll = '#front_edito';	
+								}
+							?>
+							<a href="<?php echo $scroll; ?>" class="scroll-btn"><?php _e('Scroll Down','fs-company'); ?></a>
 						</div>
 					</div>
 					
@@ -61,13 +67,14 @@ get_header(); ?>
 					
 
 <?php // CUSTOM POSTS ?>
+<?php if(get_theme_mod('display_cpt') == true) { ?>
 					
 					<?php 
 						
 						// Custom Post type Loop 
 						
 						$args_cpt = array(
-							'posts_per_page' 	=> 3,
+							'posts_per_page' 	=> -1,
 							'post_type' 		=> 'service',
 							'order'				=> 'DESC'
 						);
@@ -100,11 +107,12 @@ get_header(); ?>
 					<?php endif; ?>
 					<?php wp_reset_postdata(); ?>
 
+<?php } ?>
 
 
 <?php // PAGE CONTENT ?>
 
-					<div class="front-edito">
+					<div class="front-edito" id="front_cpt">
 						<div class="row x-center inner">
 		
 						<?php while ( have_posts() ) : the_post(); ?>

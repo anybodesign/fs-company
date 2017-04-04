@@ -11,9 +11,19 @@
 // Customizer Settings
  
 function fs_company_customize_register($wp_customize) {
+
+	// Add Front Page Section
+
+/*
+	$wp_customize->add_section('fs_frontpage_section', array(
+		'title' 		=> __('Front Page', 'fs-company'),
+		'description' 	=> __('Front Page customisation', 'fs-company'),
+		'priority'		=> 50,
+	));
+*/
 	 
 
-// Site logo white
+	// Site logo white
 	
 	$wp_customize->add_setting('site_logo_white');
 	
@@ -24,8 +34,39 @@ function fs_company_customize_register($wp_customize) {
 		'settings'		=> 'site_logo_white',
 	)));
 	
+
+	// Display Services
+	
+	$wp_customize->add_setting('display_cpt', array(
+		'default'	=> true,
+	));
+	
+	$wp_customize->add_control('display_cpt_ctrl', array(
+		'type'			=> 'checkbox',
+		'label'			=> __('Display the services on the front page', 'fs-company'),
+		'section'		=> 'static_front_page',
+		'settings'		=> 'display_cpt',
+	));
 	
 	
 	 
 }
 add_action('customize_register', 'fs_company_customize_register');
+
+
+// Customizer Colors Output
+
+function fs_company_colors() {
+	?>
+	<style>
+		.front-slider-text a { 
+			background-color: <?php echo get_theme_mod('primary_color', '#9c0'); ?> 
+		}
+		.front-slider-text a:hover,
+		.front-slider-text a:focus { 
+			color: <?php echo get_theme_mod('primary_color', '#9c0'); ?> 
+		}
+	</style>
+	<?php
+}
+add_action('wp_head','fs_company_colors');

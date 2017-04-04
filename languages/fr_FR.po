@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: From Scratch\n"
-"POT-Creation-Date: 2016-11-26 18:54+0100\n"
-"PO-Revision-Date: 2016-11-26 18:55+0100\n"
+"POT-Creation-Date: 2017-04-04 11:12+0200\n"
+"PO-Revision-Date: 2017-04-04 11:12+0200\n"
 "Last-Translator: Thomas Villain <atelier@anybodesign.com>\n"
 "Language-Team: Thomas Villain <atelier@anybodesign.com>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 2.0\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: style.css\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
@@ -20,101 +20,9 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: 404.php:21
-msgid "Oops! That page can&rsquo;t be found."
-msgstr "Oops! Page introuvable."
-
-#: 404.php:23
-msgid "It looks like nothing was found at this location. Maybe try a search?"
-msgstr ""
-"Il semblerait que rien n’ai été trouvé à cette adresse. Essayez peut-être "
-"une recherche?"
-
-#: _off/search.php:19 template-parts/page-banner.php:31
-#, php-format
-msgid "Search Results for: %s"
-msgstr "Résultats de la recherche pour : %s"
-
-#: comments.php:18
-msgid "They talk about it"
-msgstr "Ils en parlent"
-
-#: comments.php:33
-msgid "Comments are closed."
-msgstr "Les commentaires sont fermés."
-
-#: comments.php:40
-msgid "Do we talk about it?"
-msgstr "On en discute ?"
-
-#: comments.php:41
-msgid "Add my comment!"
-msgstr "Ajouter mon commentaire !"
-
-#: front-page.php:59
+#: front-page.php:61
 msgid "Scroll Down"
 msgstr "Faire défiler vers le bas"
-
-#: functions.php:91
-msgid "Main Menu"
-msgstr "Menu principal"
-
-#: functions.php:92
-msgid "Footer Menu"
-msgstr "Menu pied de page"
-
-#: functions.php:241
-msgid "Sidebar Widgets Area"
-msgstr "Zone de widget Sidebar"
-
-#: functions.php:250
-msgid "Footer Widgets Area #1"
-msgstr "Zone #1 de widgets du pied de page"
-
-#: functions.php:259
-msgid "Footer Widgets Area #2"
-msgstr "Zone #2 de widgets du pied de page"
-
-#: functions.php:268
-msgid "Footer Widgets Area #3"
-msgstr "Zone #3 de widgets du pied de page"
-
-#: header.php:33
-msgid "Go to main menu"
-msgstr "Aller au menu principal"
-
-#: header.php:34
-msgid "Go to main content\t"
-msgstr "Aller au contenu principal\t"
-
-#: header.php:48 header.php:55
-msgid "Go to Home Page"
-msgstr "Aller à la page d'accueil"
-
-#: header.php:71
-msgid "Unfold navigation menu"
-msgstr "Déplier le menu de navigation"
-
-#: header.php:71
-msgid "Menu"
-msgstr "Menu"
-
-#: inc/custom-settings.php:10 inc/custom-settings.php:11
-#: inc/custom-settings.php:69
-msgid "Custom Settings"
-msgstr "Réglages personnalisés"
-
-#: inc/custom-settings.php:27
-msgid "Site Settings"
-msgstr "Paramètres du site"
-
-#: inc/custom-settings.php:36
-msgid "Copyright"
-msgstr "Copyright"
-
-#: inc/custom-settings.php:58
-msgid "The site&rsquo;s copyright, displayed in the footer"
-msgstr "Le copyright du site, affiché dans le footer"
 
 #: inc/fs-cpt.php:30
 msgctxt "Post Type General Name"
@@ -172,7 +80,7 @@ msgstr "Introuvable"
 
 #: inc/fs-cpt.php:44 inc/fs-cpt.php:93
 msgid "Not found in Trash"
-msgstr "Introuvable dans la corbeille\t"
+msgstr "Introuvable dans la corbeille"
 
 #: inc/fs-cpt.php:54
 msgid "Our Services"
@@ -198,7 +106,7 @@ msgstr "Slides"
 
 #: inc/fs-cpt.php:83
 msgid "Parent Slide:"
-msgstr "Slide parente : "
+msgstr "Slide parente :"
 
 #: inc/fs-cpt.php:84
 msgid "All Slides"
@@ -302,81 +210,30 @@ msgstr "Rechercher une catégorie de services"
 msgid "Not Found"
 msgstr "Introuvable"
 
-#: inc/subnav-walker.php:12
-msgid "Unfold Sub-Menu"
-msgstr "Déplier le sous-menu"
+#: inc/fsc-customizer.php:31
+msgid "Site White Logo"
+msgstr "Logo blanc du site"
 
-#: index.php:42
-msgid "Previous page"
-msgstr "Page précédente"
+#: inc/fsc-customizer.php:32
+msgid "White version of your logo for the home page."
+msgstr "Version blanche de votre logo pour la page d'accueil."
 
-#: index.php:43
-msgid "Next page"
-msgstr "Page suivante"
+#: inc/fsc-customizer.php:46
+msgid "Display the services on the front page"
+msgstr "Afficher les services sur la page d'accueil"
 
-#: index.php:44
-msgid "Page"
-msgstr "Page"
+#: pagecustom-cpt.php:9
+msgid "Page for Services"
+msgstr "Pages des services"
 
-#: template-parts/content-cpt.php:35 template-parts/content-posts.php:36
+#: template-parts/content-cpt.php:35
 #, php-format
 msgid "Continue reading %s"
 msgstr "Lire la suite de l'article %s"
 
-#: template-parts/content-none.php:13
-msgid "Nothing Found"
-msgstr "Aucun résultat"
-
-#: template-parts/content-none.php:17
-#, php-format
-msgid ""
-"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-"Prêt à publier votre premier article ? <a href=« %1$s »>Commencez ici</a>."
-
-#: template-parts/content-none.php:21
-msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
-msgstr ""
-"Aucun résultat ne correspond à vos critères de recherche. Essayez avec "
-"d’autres mots clés."
-
-#: template-parts/content-none.php:27
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
-msgstr ""
-"Nous ne trouvons pas ce que vous cherchez. Essayez peut-être de faire une "
-"recherche."
-
-#: template-parts/content-posts.php:48
-msgid "Tagged with:"
-msgstr "Étiquetté&nbsp;:"
-
-#: template-parts/content-posts.php:55 template-parts/content-search.php:33
-msgid "Pages:"
-msgstr "Pages :"
-
-#: template-parts/footer-posts.php:20
-msgid "Recent Posts"
-msgstr "Articles récents"
-
-#: template-parts/post-meta.php:15
-msgid "Posted on&nbsp;"
-msgstr "Posté le&nbsp;"
-
-#: template-parts/post-meta.php:16
-msgid "by&nbsp;"
-msgstr "par&nbsp;"
-
-#: template-parts/post-meta.php:17
-msgid "in&nbsp;"
-msgstr "dans&nbsp;"
-
-#: template-parts/post-meta.php:22
-msgid "Comment(s)"
-msgstr "Commentaire(s)"
+#: template-parts/header-logo.php:21
+msgid "Go to Home Page"
+msgstr "Aller à la page d'accueil"
 
 #. Theme Name of the plugin/theme
 msgid "FS Company"
@@ -393,6 +250,133 @@ msgstr "Thomas Villain"
 #. Author URI of the plugin/theme
 msgid "https://anybodesign.com/"
 msgstr "https://anybodesign.com/"
+
+#~ msgid "Front Page"
+#~ msgstr "Page d’acceuil"
+
+#~ msgid "Front Page customisation"
+#~ msgstr "Personnalisation de la page d'accueil"
+
+#~ msgid "Oops! That page can&rsquo;t be found."
+#~ msgstr "Oops! Page introuvable."
+
+#~ msgid ""
+#~ "It looks like nothing was found at this location. Maybe try a search?"
+#~ msgstr ""
+#~ "Il semblerait que rien n’ai été trouvé à cette adresse. Essayez peut-être "
+#~ "une recherche?"
+
+#~ msgid "Search Results for: %s"
+#~ msgstr "Résultats de la recherche pour : %s"
+
+#~ msgid "They talk about it"
+#~ msgstr "Ils en parlent"
+
+#~ msgid "Comments are closed."
+#~ msgstr "Les commentaires sont fermés."
+
+#~ msgid "Do we talk about it?"
+#~ msgstr "On en discute ?"
+
+#~ msgid "Add my comment!"
+#~ msgstr "Ajouter mon commentaire !"
+
+#~ msgid "Main Menu"
+#~ msgstr "Menu principal"
+
+#~ msgid "Footer Menu"
+#~ msgstr "Menu pied de page"
+
+#~ msgid "Sidebar Widgets Area"
+#~ msgstr "Zone de widget Sidebar"
+
+#~ msgid "Footer Widgets Area #1"
+#~ msgstr "Zone #1 de widgets du pied de page"
+
+#~ msgid "Footer Widgets Area #2"
+#~ msgstr "Zone #2 de widgets du pied de page"
+
+#~ msgid "Footer Widgets Area #3"
+#~ msgstr "Zone #3 de widgets du pied de page"
+
+#~ msgid "Go to main menu"
+#~ msgstr "Aller au menu principal"
+
+#~ msgid "Go to main content\t"
+#~ msgstr "Aller au contenu principal\t"
+
+#~ msgid "Unfold navigation menu"
+#~ msgstr "Déplier le menu de navigation"
+
+#~ msgid "Menu"
+#~ msgstr "Menu"
+
+#~ msgid "Custom Settings"
+#~ msgstr "Réglages personnalisés"
+
+#~ msgid "Site Settings"
+#~ msgstr "Paramètres du site"
+
+#~ msgid "Copyright"
+#~ msgstr "Copyright"
+
+#~ msgid "The site&rsquo;s copyright, displayed in the footer"
+#~ msgstr "Le copyright du site, affiché dans le footer"
+
+#~ msgid "Unfold Sub-Menu"
+#~ msgstr "Déplier le sous-menu"
+
+#~ msgid "Previous page"
+#~ msgstr "Page précédente"
+
+#~ msgid "Next page"
+#~ msgstr "Page suivante"
+
+#~ msgid "Page"
+#~ msgstr "Page"
+
+#~ msgid "Nothing Found"
+#~ msgstr "Aucun résultat"
+
+#~ msgid ""
+#~ "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+#~ msgstr ""
+#~ "Prêt à publier votre premier article ? <a href=« %1$s »>Commencez ici</a>."
+
+#~ msgid ""
+#~ "Sorry, but nothing matched your search terms. Please try again with some "
+#~ "different keywords."
+#~ msgstr ""
+#~ "Aucun résultat ne correspond à vos critères de recherche. Essayez avec "
+#~ "d’autres mots clés."
+
+#~ msgid ""
+#~ "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+#~ "searching can help."
+#~ msgstr ""
+#~ "Nous ne trouvons pas ce que vous cherchez. Essayez peut-être de faire une "
+#~ "recherche."
+
+#~ msgid "Tagged with:"
+#~ msgstr "Étiquetté&nbsp;:"
+
+#~ msgid "Pages:"
+#~ msgstr "Pages :"
+
+#~ msgid "Recent Posts"
+#~ msgstr "Articles récents"
+
+#~ msgid "Posted on&nbsp;"
+#~ msgstr "Posté le&nbsp;"
+
+#~ msgid "by&nbsp;"
+#~ msgstr "par&nbsp;"
+
+#~ msgid "in&nbsp;"
+#~ msgstr "dans&nbsp;"
+
+#~ msgid "Comment(s)"
+#~ msgstr "Commentaire(s)"
 
 #~ msgid "http://anybodesign.com/"
 #~ msgstr "http://anybodesign.com/"

@@ -77,7 +77,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 
 #fullpage {
-	margin-bottom: 2em;
+	//margin-bottom: 2em;
 }
 
 .front-slider,
@@ -188,17 +188,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	right: 2%;
 }
 
-/*
-.scroll-btn {
-	@extend .slick-arrow;
-	top: auto; bottom: 1.5em;
-	left: 50%; margin-left: -10px;
-	transform: rotate(90deg) scale(1.5);
-	opacity: .75;
-	z-index: 10;
-}
-*/
-
 .scroll-btn {
 	@extend .slick-arrow;
 	top: auto; bottom: 2.5em;
@@ -213,6 +202,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 
 .front-cpt {
+	margin-top: 2em;
 	
 	h2 {
 		text-align: center;
@@ -233,6 +223,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 .front-edito {
 	@extend .front-cpt;
+	margin-top: 0;
 	padding: $grid-padding*4 0;
 	background-color: #eee;
 }

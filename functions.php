@@ -1,6 +1,10 @@
 <?php if ( !defined('ABSPATH') ) die();
 
 
+// I18n
+
+load_theme_textdomain( 'fs-company', get_stylesheet_directory() . '/languages' );
+
 
 // Parent's CSS
 
