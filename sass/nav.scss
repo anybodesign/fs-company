@@ -1,0 +1,72 @@
+// -------------------------
+// 
+// = Main Navigation
+// 
+// -------------------------
+
+
+// Main nav
+
+
+.main-menu {
+	
+	& > li {
+
+		@include rwd(large) {
+			.home & {
+				color: #fff;
+			}
+		}
+		
+		& > a:hover, & > a:focus {
+
+			@include rwd(large) {
+				.home & {
+					color: #fff;
+					opacity: .7; 
+				}
+			}
+			
+		}
+		&.current-menu-item > a,
+		&.current-menu-ancestor > a {
+
+			@include rwd(large) {
+				.home & {
+					border-color: #fff; 
+				}
+			}
+			 
+		}
+		
+
+		// Sub-Menus behaviors
+		
+		.sub-menu {
+	
+			@include rwd(large) {
+				.home & {
+					background-color: rgba(255, 255, 255, 0.8);
+				}
+			}
+		
+		}
+		
+	}
+	
+	
+}
+
+.sub-menu-unfold {
+	
+	&::after, &::before {
+
+		@include rwd(large) {
+			.home & {
+				background-color: #fff;
+				opacity: .7;
+			}
+		}
+	}
+	
+}
