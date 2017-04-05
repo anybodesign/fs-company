@@ -6,14 +6,6 @@
 load_theme_textdomain( 'fs-company', get_stylesheet_directory() . '/languages' );
 
 
-// Parent's CSS
-
-function fs_company_enqueue_styles() {
-    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
-}
-add_action( 'wp_enqueue_scripts', 'fs_company_enqueue_styles' );
-
-
 
 // The Custom Post Type & Slider
 
@@ -93,7 +85,18 @@ function fs_company_scripts_load() {
 				'screen' 
 			);
 
+
 		}
+		
+		// Parent's CSS
+
+		wp_enqueue_style( 
+			'parent-style', 
+			get_template_directory_uri() . '/style.css',
+			array('pridx'),
+			false,
+			'screen'
+		);
 		
 
 	}
