@@ -102,3 +102,18 @@ function fs_company_scripts_load() {
 	}
 }    
 add_action( 'wp_enqueue_scripts', 'fs_company_scripts_load' );
+
+
+
+// Auto-Updater
+
+require 'inc/plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://bitbucket.org/anybodesign/fs-company',
+	__FILE__,
+	'fs-company'
+);
+$myUpdateChecker->setAuthentication(array(
+	'consumer_key' => 'S4YYALTKVXGavp39LZ',
+	'consumer_secret' => '3W8D5LuDcjADwAYJ9hPXYg3WUnmGBRp6',
+)); 
