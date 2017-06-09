@@ -131,6 +131,38 @@ add_action('init', 'fs_custom_posts');
 function fs_custom_taxonomies() {
 
 	$labels = array(
+		'name'							=> _x( 'Slide Categories', 'Taxonomy General Name', 'fs-company' ),
+		'singular_name'					=> _x( 'Slide Category', 'Taxonomy Singular Name', 'fs-company' ),
+		'menu_name'						=> __( 'Slide Categories', 'fs-company' ),
+		'all_items'						=> __( 'All Slide Categories', 'fs-company' ),
+		'parent_item'					=> __( 'Parent Slide Category', 'fs-company' ),
+		'parent_item_colon'				=> __( 'Parent Slide Category:', 'fs-company' ),
+		'new_item_name'					=> __( 'New Slide Category', 'fs-company' ),
+		'add_new_item'					=> __( 'Add New Slide Category', 'fs-company' ),
+		'edit_item'						=> __( 'Edit Slide Category', 'fs-company' ),
+		'update_item'					=> __( 'Update Slide Category', 'fs-company' ),
+		'view_item'						=> __( 'View Slide Category', 'fs-company' ),
+		'separate_items_with_commas'	=> __( 'Separate items with commas', 'fs-company' ),
+		'add_or_remove_items'			=> __( 'Add or remove items', 'fs-company' ),
+		'choose_from_most_used'			=> __( 'Choose from the most used', 'fs-company' ),
+		'popular_items'					=> __( 'Popular Slide Category', 'fs-company' ),
+		'search_items'					=> __( 'Search Slide Category', 'fs-company' ),
+		'not_found'						=> __( 'Not Found', 'fs-company' ),
+	);
+	$args = array(
+		'labels'				=> $labels,
+		'hierarchical'			=> true,
+		'public'				=> true,
+		'show_ui'				=> true,
+		'show_admin_column'		=> true,
+		'show_in_nav_menus'		=> true,
+		'show_tagcloud'			=> false,
+		//'rewrite'				=> array( 'slug' => 'creations' ),		
+	);
+	register_taxonomy( 'slide-category', array( 'slide' ), $args );	
+
+
+	$labels = array(
 		'name'							=> _x( 'Services Categories', 'Taxonomy General Name', 'fs-company' ),
 		'singular_name'					=> _x( 'Services Category', 'Taxonomy Singular Name', 'fs-company' ),
 		'menu_name'						=> __( 'Services Categories', 'fs-company' ),

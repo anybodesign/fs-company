@@ -38,7 +38,8 @@ function fs_company_customize_register($wp_customize) {
 	// Display Services
 	
 	$wp_customize->add_setting('display_cpt', array(
-		'default'	=> true,
+		'default'	=> false,
+		'sanitize_callback'	=> 'fsc_customizer_sanitize_checkbox',				
 	));
 	
 	$wp_customize->add_control('display_cpt_ctrl', array(
@@ -52,6 +53,17 @@ function fs_company_customize_register($wp_customize) {
 	 
 }
 add_action('customize_register', 'fs_company_customize_register');
+
+
+// Sanitize
+
+// Checkbox
+function fsc_customizer_sanitize_checkbox( $input ) {
+	if ( $input === true || $input === '1' ) {
+		return '1';
+	}
+	return '';
+}
 
 
 // Customizer Colors Output
