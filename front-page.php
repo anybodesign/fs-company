@@ -46,8 +46,14 @@ get_header(); ?>
 								    	$cat = $slide_cats[0]->slug;
 									}
 									?>
+									
+		                            <?php if (wp_is_mobile()) {
+		                                $mob = 'mobile';
+		                            } else {
+		                                $mob = 'desktop';
+		                            } ?>
 																		
-									<div class="front-slider-item <?php echo esc_html($cat); ?>" style="background-image: url(<?php echo $large_image_url[0]; ?>)">
+									<div class="front-slider-item <?php echo esc_html($cat); ?> <?php echo esc_html($mob); ?>" style="background-image: url(<?php echo $large_image_url[0]; ?>)">
 										<div class="front-slider-content">
 											<h2 class="front-slider-title"><?php the_title(); ?></h2>
 											<div class="front-slider-text">
