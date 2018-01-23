@@ -140,7 +140,7 @@ get_header(); ?>
 
 <?php // PAGE CONTENT ?>
 
-					<div class="front-edito" id="front_cpt">
+					<div class="front-edito" id="front_edito">
 						<div class="row x-center inner">
 		
 						<?php while ( have_posts() ) : the_post(); ?>
