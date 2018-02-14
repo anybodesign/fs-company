@@ -189,7 +189,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	margin-bottom: .5em;
 	
 	@include rwd(large) {
-		font-size: 4.2rem;
+		font-size: 3.6rem;
 	}	 
 }
 .front-slider-text {
@@ -200,11 +200,13 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		margin-right: auto;
 			
 		@include rwd(large) {
-			font-size: 2.8rem;
+			font-size: 2.4rem;
 		}
 	}
 	
 	a {
+		font-size: 1.8rem;
+		text-transform: uppercase;
 		padding: $grid-padding;
 		background-color: $primary-color;
 		color: #fff;
