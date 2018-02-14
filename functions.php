@@ -29,7 +29,7 @@ function fs_company_scripts_load() {
 		wp_enqueue_script( 'jquery' );
 
 
-		if ( is_front_page() ) {
+		if ( is_front_page() || is_page_template('pagecustom-maintenance.php') ) {
 
 			wp_enqueue_script(
 				'slick', 
@@ -61,7 +61,7 @@ function fs_company_scripts_load() {
 		
 		// CSS
 		
-		if ( is_front_page() ) {
+		if ( is_front_page() || is_page_template('pagecustom-maintenance.php') ) {
 			
 			wp_enqueue_style( 
 				'slick', 

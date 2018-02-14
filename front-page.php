@@ -13,132 +13,17 @@ get_header(); ?>
 
 				<div id="primary" class="content-area" role="main">
 					
-<?php // SLIDER ?>
-					<?php 
-						
-						// Slider Loop 
-						
-						$args_slider = array(
-							'posts_per_page' 	=> -1,
-							'post_type' 		=> 'slide',
-							'order'				=> 'ASC'
-						);
-						$query_slider = new WP_Query($args_slider);
-					?>						
+				<?php // SLIDER ?>
 				
-					<?php if ($query_slider->have_posts()) : ?>
-						
-					<div id="fullpage">
-						<div class="fullpage-section">
-												
-							<div class="front-slider">
-		
-								<?php while ($query_slider->have_posts()) : $query_slider->the_post(); ?>
-
-									<?php if ( '' != get_the_post_thumbnail() ) { 
-										$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large' ); 
-									} ?>
-									
-									<?php 
-									$slide_cats = get_the_terms( $post->ID, 'slide-category' ); 
-									
-									if ( ! empty( $slide_cats ) ) {
-								    	$cat = $slide_cats[0]->slug;
-									}
-									?>
-									
-		                            <?php if (wp_is_mobile()) {
-		                                $mob = 'mobile';
-		                            } else {
-		                                $mob = 'desktop';
-		                            } ?>
-																		
-									<div class="front-slider-item <?php echo esc_html($cat); ?> <?php echo esc_html($mob); ?>" style="background-image: url(<?php echo $large_image_url[0]; ?>)">
-										<div class="front-slider-content">
-											<h2 class="front-slider-title"><?php the_title(); ?></h2>
-											<div class="front-slider-text">
-												<?php the_content(); ?>
-											</div>
-										</div>
-									</div>
-	
-								<?php endwhile; ?>
-		
-							</div>
-							
-							<?php if(get_theme_mod('display_cpt') == true) { 
-								$scroll = '#front_cpt';
-								} else {
-								$scroll = '#front_edito';	
-								}
-							?>
-							<a href="<?php echo $scroll; ?>" class="scroll-btn"><?php _e('Scroll Down','fs-company'); ?></a>
-						</div>
-					</div>
-					
-					<?php endif; ?>
-					<?php wp_reset_postdata(); ?>
+				<?php get_template_part( 'template-parts/front', 'slider' ); ?>
 					
 
-<?php // CUSTOM POSTS ?>
-<?php if(get_theme_mod('display_cpt') == true) { ?>
-					
-					<?php 
-						
-						// Custom Post type Loop 
-						
-						$args_cpt = array(
-							'posts_per_page' 	=> 6,
-							'post_type' 		=> 'service',
-							'order'				=> 'DESC'
-						);
-						$query_cpt = new WP_Query($args_cpt);
-					?>						
-				
-					<?php if ($query_cpt->have_posts()) : ?>
-					
-					<div class="front-cpt" id="front_cpt">
+				<?php // CUSTOM POSTS ?>
 
-						<div class="row x-center inner">
-							
-							<div class="col-12">
-							<?php
-								$obj = get_post_type_object( 'service' );
-								echo '<h2>' . $obj->labels->name . '</h2>';
-							?>
-							</div>	
-							
-							<?php while ($query_cpt->have_posts()) : $query_cpt->the_post(); ?>
-							<div class="col-4 mid-6">
-								<?php get_template_part( 'template-parts/content','cpt' ); ?>
-							</div>
-							<?php endwhile; ?>
-
-							<?php if(get_theme_mod('select_cpt_page')) { ?>
-							<div class="col-12 txtc">
-								<?php $ctp_link = get_theme_mod('select_cpt_page'); ?>
-								
-								<a href="<?php echo get_permalink($ctp_link); ?>" class="action-btn">
-									<?php if(get_theme_mod('cpt_btn_text')) {
-										echo get_theme_mod('cpt_btn_text'); 
-									} else {
-										echo _e('See All','fs-company'); 	
-									} ?>
-								</a>
-							</div>					
-							<?php } ?>
-							
-						</div>
-						
-					</div>					
-
-					<?php endif; ?>
-					<?php wp_reset_postdata(); ?>
-
-<?php } ?>
+				<?php get_template_part( 'template-parts/front', 'cpt' ); ?>
 
 
-<?php // PAGE CONTENT ?>
+				<?php // PAGE CONTENT ?>
 
 					<div class="front-edito" id="front_edito">
 						<div class="row x-center inner">
