@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: From Scratch\n"
-"POT-Creation-Date: 2018-01-23 12:53+0100\n"
-"PO-Revision-Date: 2018-01-23 12:56+0100\n"
+"POT-Creation-Date: 2018-02-14 11:25+0100\n"
+"PO-Revision-Date: 2018-02-14 11:25+0100\n"
 "Last-Translator: Thomas Villain <atelier@anybodesign.com>\n"
 "Language-Team: Thomas Villain <atelier@anybodesign.com>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.5\n"
+"X-Generator: Poedit 2.0.6\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: style.css\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
@@ -28,273 +28,237 @@ msgstr "Faire défiler vers le bas"
 msgid "See All"
 msgstr "Tout voir"
 
-#: inc/fs-cpt.php:30
+#: inc/fs-cpt.php:31
 msgctxt "Post Type General Name"
 msgid "Services"
 msgstr "Services"
 
-#: inc/fs-cpt.php:31
+#: inc/fs-cpt.php:32
 msgctxt "Post Type Singular Name"
 msgid "Service"
 msgstr "Service"
 
-#: inc/fs-cpt.php:32 inc/fs-cpt.php:33 inc/fs-cpt.php:53
+#: inc/fs-cpt.php:33 inc/fs-cpt.php:34 inc/fs-cpt.php:56
 msgid "Services"
 msgstr "Services"
 
-#: inc/fs-cpt.php:34
-msgid "Parent service:"
-msgstr "Service parent :"
-
-#: inc/fs-cpt.php:35
-msgid "All services"
-msgstr "Tous les services"
-
-#: inc/fs-cpt.php:36
-msgid "Add New Service"
-msgstr "Ajouter un nouveau service"
-
-#: inc/fs-cpt.php:37 inc/fs-cpt.php:86
-msgid "Add New"
-msgstr "Ajouter"
-
-#: inc/fs-cpt.php:38
-msgid "New Service"
-msgstr "Nouveau service"
-
-#: inc/fs-cpt.php:39
-msgid "Edit Service"
-msgstr "Modifier le service"
-
-#: inc/fs-cpt.php:40
-msgid "Update Service"
-msgstr "Mettre à jour le service"
-
-#: inc/fs-cpt.php:41
-msgid "View Service"
-msgstr "Voir le service"
-
-#: inc/fs-cpt.php:42
-msgid "Search Service"
-msgstr "Chercher le service"
-
-#: inc/fs-cpt.php:43 inc/fs-cpt.php:92
-msgid "Not found"
-msgstr "Introuvable"
-
-#: inc/fs-cpt.php:44 inc/fs-cpt.php:93
-msgid "Not found in Trash"
-msgstr "Introuvable dans la corbeille"
-
-#: inc/fs-cpt.php:54
-msgid "Our Services"
-msgstr "Nos services"
-
-#: inc/fs-cpt.php:79
+#: inc/fs-cpt.php:82
 msgctxt "Post Type General Name"
 msgid "Slides"
 msgstr "Slides"
 
-#: inc/fs-cpt.php:80
+#: inc/fs-cpt.php:83
 msgctxt "Post Type Singular Name"
 msgid "Slide"
 msgstr "Slide"
 
-#: inc/fs-cpt.php:81
+#: inc/fs-cpt.php:84
 msgid "Slider"
 msgstr "Slider"
 
-#: inc/fs-cpt.php:82 inc/fs-cpt.php:102
+#: inc/fs-cpt.php:85 inc/fs-cpt.php:105
 msgid "Slides"
 msgstr "Slides"
 
-#: inc/fs-cpt.php:83
+#: inc/fs-cpt.php:86
 msgid "Parent Slide:"
 msgstr "Slide parente :"
 
-#: inc/fs-cpt.php:84
+#: inc/fs-cpt.php:87
 msgid "All Slides"
 msgstr "Toutes les slides"
 
-#: inc/fs-cpt.php:85
+#: inc/fs-cpt.php:88
 msgid "Add New Slide"
 msgstr "Ajouter une nouvelle slide"
 
-#: inc/fs-cpt.php:87
+#: inc/fs-cpt.php:89
+msgid "Add New"
+msgstr "Ajouter"
+
+#: inc/fs-cpt.php:90
 msgid "New Slide"
 msgstr "Nouvelle slide"
 
-#: inc/fs-cpt.php:88
+#: inc/fs-cpt.php:91
 msgid "Edit Slide"
 msgstr "Modifier la slide"
 
-#: inc/fs-cpt.php:89
+#: inc/fs-cpt.php:92
 msgid "Update Slide"
 msgstr "Mettre à jour la slide"
 
-#: inc/fs-cpt.php:90
+#: inc/fs-cpt.php:93
 msgid "View Slide"
 msgstr "Voir la slide"
 
-#: inc/fs-cpt.php:91
+#: inc/fs-cpt.php:94
 msgid "Search Slide"
 msgstr "Chercher une slide"
 
-#: inc/fs-cpt.php:103
+#: inc/fs-cpt.php:95
+msgid "Not found"
+msgstr "Introuvable"
+
+#: inc/fs-cpt.php:96
+msgid "Not found in Trash"
+msgstr "Introuvable dans la corbeille"
+
+#: inc/fs-cpt.php:106
 msgid "The Slides"
 msgstr "Les slides"
 
-#: inc/fs-cpt.php:134
+#: inc/fs-cpt.php:137
 msgctxt "Taxonomy General Name"
 msgid "Slide Categories"
 msgstr "Catégories de slide"
 
-#: inc/fs-cpt.php:135
+#: inc/fs-cpt.php:138
 msgctxt "Taxonomy Singular Name"
 msgid "Slide Category"
 msgstr "Catégorie de slide"
 
-#: inc/fs-cpt.php:136
+#: inc/fs-cpt.php:139
 msgid "Slide Categories"
 msgstr "Catégories de slide"
 
-#: inc/fs-cpt.php:137
+#: inc/fs-cpt.php:140
 msgid "All Slide Categories"
 msgstr "Toutes les catégories de slide"
 
-#: inc/fs-cpt.php:138
+#: inc/fs-cpt.php:141
 msgid "Parent Slide Category"
 msgstr "Catégorie de slide parente"
 
-#: inc/fs-cpt.php:139
+#: inc/fs-cpt.php:142
 msgid "Parent Slide Category:"
 msgstr "Catégorie de slide parente :"
 
-#: inc/fs-cpt.php:140
+#: inc/fs-cpt.php:143
 msgid "New Slide Category"
 msgstr "Nouvelle catégorie de slide"
 
-#: inc/fs-cpt.php:141
+#: inc/fs-cpt.php:144
 msgid "Add New Slide Category"
 msgstr "Ajouter une nouvelle catégorie de slide"
 
-#: inc/fs-cpt.php:142
+#: inc/fs-cpt.php:145
 msgid "Edit Slide Category"
 msgstr "Modifier la catégorie de slide"
 
-#: inc/fs-cpt.php:143
+#: inc/fs-cpt.php:146
 msgid "Update Slide Category"
 msgstr "Mettre à jour la catégorie de slide"
 
-#: inc/fs-cpt.php:144
+#: inc/fs-cpt.php:147
 msgid "View Slide Category"
 msgstr "Voir la catégorie de slide"
 
-#: inc/fs-cpt.php:145 inc/fs-cpt.php:177
+#: inc/fs-cpt.php:148
 msgid "Separate items with commas"
 msgstr "Séparer les éléments par des virgules"
 
-#: inc/fs-cpt.php:146 inc/fs-cpt.php:178
+#: inc/fs-cpt.php:149
 msgid "Add or remove items"
 msgstr "Ajouter ou supprimer des éléments"
 
-#: inc/fs-cpt.php:147 inc/fs-cpt.php:179
+#: inc/fs-cpt.php:150
 msgid "Choose from the most used"
 msgstr "Choisir parmi les plus utilisés"
 
-#: inc/fs-cpt.php:148
+#: inc/fs-cpt.php:151
 msgid "Popular Slide Category"
 msgstr "Catégorie de slide populaire"
 
-#: inc/fs-cpt.php:149
+#: inc/fs-cpt.php:152
 msgid "Search Slide Category"
 msgstr "Rechercher une catégorie de slide"
 
-#: inc/fs-cpt.php:150 inc/fs-cpt.php:182
+#: inc/fs-cpt.php:153
 msgid "Not Found"
 msgstr "Introuvable"
 
-#: inc/fs-cpt.php:166
+#: inc/fs-cpt.php:169
 msgctxt "Taxonomy General Name"
 msgid "Services Categories"
 msgstr "Catégories de services"
 
-#: inc/fs-cpt.php:167
+#: inc/fs-cpt.php:170
 msgctxt "Taxonomy Singular Name"
 msgid "Services Category"
 msgstr "Catégorie de services"
 
-#: inc/fs-cpt.php:168
+#: inc/fs-cpt.php:171
 msgid "Services Categories"
 msgstr "Catégories de services"
 
-#: inc/fs-cpt.php:169
-msgid "All Services Categories"
-msgstr "Toutes les catégories de services"
+#: inc/fsc-customizer.php:18
+msgid "Custom Post Type"
+msgstr "Contenu personnalisé"
 
-#: inc/fs-cpt.php:170
-msgid "Parent Services Category"
-msgstr "Catégorie de services parente"
+#: inc/fsc-customizer.php:19
+msgid "Settings for your custom content"
+msgstr "Paramètres pour votre contenu personnalisé"
 
-#: inc/fs-cpt.php:171
-msgid "Parent Services Category:"
-msgstr "Catégorie de services parente :"
+#: inc/fsc-customizer.php:23
+msgid "Custom Taxonomy"
+msgstr "Taxonomie personnalisée"
 
-#: inc/fs-cpt.php:172
-msgid "New Services Category"
-msgstr "Nouvelle catégorie de services"
+#: inc/fsc-customizer.php:24
+msgid "Settings for your custom taxonomy"
+msgstr "Paramètres pour votre taxonomie personnalisée"
 
-#: inc/fs-cpt.php:173
-msgid "Add New Services Category"
-msgstr "Ajouter une nouvelle catégorie de services"
-
-#: inc/fs-cpt.php:174
-msgid "Edit Services Category"
-msgstr "Modifier la catégorie de services"
-
-#: inc/fs-cpt.php:175
-msgid "Update Services Category"
-msgstr "Mettre à jour la catégorie de services"
-
-#: inc/fs-cpt.php:176
-msgid "View Services Category"
-msgstr "Voir la catégorie de services"
-
-#: inc/fs-cpt.php:180
-msgid "Popular Services Category"
-msgstr "Catégorie de services populaire"
-
-#: inc/fs-cpt.php:181
-msgid "Search Services Category"
-msgstr "Rechercher une catégorie de services"
-
-#: inc/fsc-customizer.php:31
-msgid "Site White Logo"
-msgstr "Logo blanc du site"
-
-#: inc/fsc-customizer.php:32
-msgid "White version of your logo for the home page."
-msgstr "Version blanche de votre logo pour la page d'accueil."
+#: inc/fsc-customizer.php:37
+msgid "Custom Posts Name - Singular"
+msgstr "Contenu personnalisé au singulier"
 
 #: inc/fsc-customizer.php:47
+msgid "Custom Posts Name - Plural"
+msgstr "Contenu personnalisé au pluriel"
+
+#: inc/fsc-customizer.php:57
+msgid "Custom Posts Slug (lowercase)"
+msgstr "Identifiant du contenu personnalisé (minuscules)"
+
+#: inc/fsc-customizer.php:70
 msgid "Display your custom posts on the front page"
 msgstr "Afficher vos contenus personnalisés sur la page d'accueil"
 
-#: inc/fsc-customizer.php:63
+#: inc/fsc-customizer.php:84
 msgid "Custom Posts Page"
 msgstr "Page du contenu personnalisé"
 
-#: inc/fsc-customizer.php:64
-msgid "Select the page where your custom posts are."
-msgstr "Sélectionner la page de vos contenus personnalisés"
+#: inc/fsc-customizer.php:85
+msgid "Select the page for your custom posts."
+msgstr "Sélectionner la page de vos contenus personnalisés."
 
-#: inc/fsc-customizer.php:75
+#: inc/fsc-customizer.php:96
 msgid "Custom posts button text"
 msgstr "Intitulé du bouton des contenus personnalisés"
 
-#: inc/fsc-customizer.php:76
+#: inc/fsc-customizer.php:97
 msgid "Add a custom text for the \"See All\" button."
 msgstr "Ajouter un intitulé personnalisé pour le bouton \"Tout voir\"."
+
+#: inc/fsc-customizer.php:112
+msgid "Custom Taxonomy Name - Singular"
+msgstr "Nom de taxonomie personnalisée - singulier"
+
+#: inc/fsc-customizer.php:122
+msgid "Custom Taxonomy Name - Plural"
+msgstr "Nom de taxonomie personnalisée - pluriel"
+
+#: inc/fsc-customizer.php:132
+msgid "Custom Taxonomy slug (lowercase)"
+msgstr "Identifiant de la taxonomie personnalisée (minuscules)"
+
+#: inc/fsc-customizer.php:143
+msgid "Site White Logo"
+msgstr "Logo blanc du site"
+
+#: inc/fsc-customizer.php:144
+msgid "White version of your logo for the home page."
+msgstr "Version blanche de votre logo pour la page d'accueil."
 
 #: inc/plugin-update-checker/Puc/v4p1/Plugin/UpdateChecker.php:358
 msgid "Check for updates"
@@ -321,10 +285,6 @@ msgstr "Statut inconnu du vérificateur de mise à jour \"%s\""
 msgid "There is no changelog available."
 msgstr "Il n'y a aucun historique des mises à jour disponible."
 
-#: pagecustom-cpt.php:9
-msgid "Page for Services"
-msgstr "Pages des services"
-
 #: template-parts/content-cpt.php:35
 #, php-format
 msgid "Continue reading %s"
@@ -349,6 +309,101 @@ msgstr "Thomas Villain"
 #. Author URI of the plugin/theme
 msgid "https://anybodesign.com/"
 msgstr "https://anybodesign.com/"
+
+#~ msgid "Parent service:"
+#~ msgstr "Service parent :"
+
+#~ msgid "All services"
+#~ msgstr "Tous les services"
+
+#~ msgid "Add New Service"
+#~ msgstr "Ajouter un nouveau service"
+
+#~ msgid "New Service"
+#~ msgstr "Nouveau service"
+
+#~ msgid "Edit Service"
+#~ msgstr "Modifier le service"
+
+#~ msgid "Update Service"
+#~ msgstr "Mettre à jour le service"
+
+#~ msgid "View Service"
+#~ msgstr "Voir le service"
+
+#~ msgid "Search Service"
+#~ msgstr "Chercher le service"
+
+#~ msgid "Our Services"
+#~ msgstr "Nos services"
+
+#~ msgid "All Services Categories"
+#~ msgstr "Toutes les catégories de services"
+
+#~ msgid "Parent Services Category"
+#~ msgstr "Catégorie de services parente"
+
+#~ msgid "Parent Services Category:"
+#~ msgstr "Catégorie de services parente :"
+
+#~ msgid "New Services Category"
+#~ msgstr "Nouvelle catégorie de services"
+
+#~ msgid "Add New Services Category"
+#~ msgstr "Ajouter une nouvelle catégorie de services"
+
+#~ msgid "Edit Services Category"
+#~ msgstr "Modifier la catégorie de services"
+
+#~ msgid "Update Services Category"
+#~ msgstr "Mettre à jour la catégorie de services"
+
+#~ msgid "View Services Category"
+#~ msgstr "Voir la catégorie de services"
+
+#~ msgid "Popular Services Category"
+#~ msgstr "Catégorie de services populaire"
+
+#~ msgid "Search Services Category"
+#~ msgstr "Rechercher une catégorie de services"
+
+#, fuzzy
+#~| msgid "Parent Slide:"
+#~ msgid "Parent "
+#~ msgstr "Slide parente :"
+
+#, fuzzy
+#~| msgid "Add New"
+#~ msgid "Add New "
+#~ msgstr "Ajouter"
+
+#, fuzzy
+#~| msgid "New Slide"
+#~ msgid "New "
+#~ msgstr "Nouvelle slide"
+
+#, fuzzy
+#~| msgid "Edit Slide"
+#~ msgid "Edit "
+#~ msgstr "Modifier la slide"
+
+#, fuzzy
+#~| msgid "Update Slide"
+#~ msgid "Update "
+#~ msgstr "Mettre à jour la slide"
+
+#, fuzzy
+#~| msgid "View Slide"
+#~ msgid "View "
+#~ msgstr "Voir la slide"
+
+#, fuzzy
+#~| msgid "Search Slide"
+#~ msgid "Search "
+#~ msgstr "Chercher une slide"
+
+#~ msgid "Page for Services"
+#~ msgstr "Pages des services"
 
 #~ msgid "Front Page"
 #~ msgstr "Page d’acceuil"

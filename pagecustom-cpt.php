@@ -1,12 +1,11 @@
 <?php if ( !defined('ABSPATH') ) die();
 /**
- * Template Name: Page for Services
+ * Template Name: Custom content page
  *
  * @package WordPress
  * @subpackage FS_Company
  * @since FS Company 1.0
  */
- __( 'Page for Services', 'fs-company' );
 get_header(); ?>
 
 				<main id="primary" class="content-area" role="main">

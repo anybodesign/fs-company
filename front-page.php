@@ -120,7 +120,7 @@ get_header(); ?>
 								
 								<a href="<?php echo get_permalink($ctp_link); ?>" class="action-btn">
 									<?php if(get_theme_mod('cpt_btn_text')) {
-										echo get_theme_mod('cpt_btn_text', ''); 
+										echo get_theme_mod('cpt_btn_text'); 
 									} else {
 										echo _e('See All','fs-company'); 	
 									} ?>
