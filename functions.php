@@ -35,7 +35,7 @@ function fs_company_scripts_load() {
 				'slick', 
 				get_stylesheet_directory_uri() . '/js/slick.min.js', 
 				array('jquery'), 
-				'1.6.0', 
+				'1.8.0', 
 				true
 			);
 			wp_enqueue_script(
@@ -95,11 +95,8 @@ add_action( 'wp_enqueue_scripts', 'fs_company_scripts_load' );
 
 require 'inc/plugin-update-checker/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://bitbucket.org/anybodesign/fs-company',
+	'https://github.com/anybodesign/fs-company',
 	__FILE__,
 	'fs-company'
 );
-$myUpdateChecker->setAuthentication(array(
-	'consumer_key' => 'S4YYALTKVXGavp39LZ',
-	'consumer_secret' => '3W8D5LuDcjADwAYJ9hPXYg3WUnmGBRp6',
-)); 
+$myUpdateChecker->setBranch('master');
