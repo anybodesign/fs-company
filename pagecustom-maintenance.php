@@ -8,13 +8,7 @@
  */
 get_header(); ?>
 
-				<div id="primary" class="content-area" role="main">
-					
 				<?php // SLIDER ?>
-				
 				<?php get_template_part( 'template-parts/front', 'slider' ); ?>
-					
-
-				</div> <?php // END primary ?>
 
 <?php get_footer(); ?>
