@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: From Scratch\n"
-"POT-Creation-Date: 2018-02-14 11:25+0100\n"
-"PO-Revision-Date: 2018-02-14 11:25+0100\n"
+"POT-Creation-Date: 2020-03-31 18:22+0200\n"
+"PO-Revision-Date: 2020-03-31 18:23+0200\n"
 "Last-Translator: Thomas Villain <atelier@anybodesign.com>\n"
 "Language-Team: Thomas Villain <atelier@anybodesign.com>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.3\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: style.css\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
@@ -19,14 +19,6 @@ msgstr ""
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
-
-#: front-page.php:75
-msgid "Scroll Down"
-msgstr "Faire défiler vers le bas"
-
-#: front-page.php:125
-msgid "See All"
-msgstr "Tout voir"
 
 #: inc/fs-cpt.php:31
 msgctxt "Post Type General Name"
@@ -38,157 +30,129 @@ msgctxt "Post Type Singular Name"
 msgid "Service"
 msgstr "Service"
 
-#: inc/fs-cpt.php:33 inc/fs-cpt.php:34 inc/fs-cpt.php:56
+#: inc/fs-cpt.php:33 inc/fs-cpt.php:34 inc/fs-cpt.php:53
 msgid "Services"
 msgstr "Services"
 
-#: inc/fs-cpt.php:82
+#: inc/fs-cpt.php:80
 msgctxt "Post Type General Name"
 msgid "Slides"
 msgstr "Slides"
 
-#: inc/fs-cpt.php:83
+#: inc/fs-cpt.php:81
 msgctxt "Post Type Singular Name"
 msgid "Slide"
 msgstr "Slide"
 
-#: inc/fs-cpt.php:84
+#: inc/fs-cpt.php:82
 msgid "Slider"
 msgstr "Slider"
 
-#: inc/fs-cpt.php:85 inc/fs-cpt.php:105
+#: inc/fs-cpt.php:83 inc/fs-cpt.php:100
 msgid "Slides"
 msgstr "Slides"
 
-#: inc/fs-cpt.php:86
+#: inc/fs-cpt.php:84
 msgid "Parent Slide:"
 msgstr "Slide parente :"
 
-#: inc/fs-cpt.php:87
+#: inc/fs-cpt.php:85
 msgid "All Slides"
 msgstr "Toutes les slides"
 
-#: inc/fs-cpt.php:88
+#: inc/fs-cpt.php:86
 msgid "Add New Slide"
 msgstr "Ajouter une nouvelle slide"
 
-#: inc/fs-cpt.php:89
-msgid "Add New"
-msgstr "Ajouter"
-
-#: inc/fs-cpt.php:90
+#: inc/fs-cpt.php:87
 msgid "New Slide"
 msgstr "Nouvelle slide"
 
-#: inc/fs-cpt.php:91
+#: inc/fs-cpt.php:88
 msgid "Edit Slide"
 msgstr "Modifier la slide"
 
-#: inc/fs-cpt.php:92
+#: inc/fs-cpt.php:89
 msgid "Update Slide"
 msgstr "Mettre à jour la slide"
 
-#: inc/fs-cpt.php:93
+#: inc/fs-cpt.php:90
 msgid "View Slide"
 msgstr "Voir la slide"
 
-#: inc/fs-cpt.php:94
+#: inc/fs-cpt.php:91
 msgid "Search Slide"
 msgstr "Chercher une slide"
 
-#: inc/fs-cpt.php:95
-msgid "Not found"
-msgstr "Introuvable"
-
-#: inc/fs-cpt.php:96
-msgid "Not found in Trash"
-msgstr "Introuvable dans la corbeille"
-
-#: inc/fs-cpt.php:106
+#: inc/fs-cpt.php:101
 msgid "The Slides"
 msgstr "Les slides"
 
-#: inc/fs-cpt.php:137
+#: inc/fs-cpt.php:132
 msgctxt "Taxonomy General Name"
 msgid "Slide Categories"
 msgstr "Catégories de slide"
 
-#: inc/fs-cpt.php:138
+#: inc/fs-cpt.php:133
 msgctxt "Taxonomy Singular Name"
 msgid "Slide Category"
 msgstr "Catégorie de slide"
 
-#: inc/fs-cpt.php:139
+#: inc/fs-cpt.php:134
 msgid "Slide Categories"
 msgstr "Catégories de slide"
 
-#: inc/fs-cpt.php:140
+#: inc/fs-cpt.php:135
 msgid "All Slide Categories"
 msgstr "Toutes les catégories de slide"
 
-#: inc/fs-cpt.php:141
+#: inc/fs-cpt.php:136
 msgid "Parent Slide Category"
 msgstr "Catégorie de slide parente"
 
-#: inc/fs-cpt.php:142
+#: inc/fs-cpt.php:137
 msgid "Parent Slide Category:"
 msgstr "Catégorie de slide parente :"
 
-#: inc/fs-cpt.php:143
+#: inc/fs-cpt.php:138
 msgid "New Slide Category"
 msgstr "Nouvelle catégorie de slide"
 
-#: inc/fs-cpt.php:144
+#: inc/fs-cpt.php:139
 msgid "Add New Slide Category"
 msgstr "Ajouter une nouvelle catégorie de slide"
 
-#: inc/fs-cpt.php:145
+#: inc/fs-cpt.php:140
 msgid "Edit Slide Category"
 msgstr "Modifier la catégorie de slide"
 
-#: inc/fs-cpt.php:146
+#: inc/fs-cpt.php:141
 msgid "Update Slide Category"
 msgstr "Mettre à jour la catégorie de slide"
 
-#: inc/fs-cpt.php:147
+#: inc/fs-cpt.php:142
 msgid "View Slide Category"
 msgstr "Voir la catégorie de slide"
 
-#: inc/fs-cpt.php:148
-msgid "Separate items with commas"
-msgstr "Séparer les éléments par des virgules"
-
-#: inc/fs-cpt.php:149
-msgid "Add or remove items"
-msgstr "Ajouter ou supprimer des éléments"
-
-#: inc/fs-cpt.php:150
-msgid "Choose from the most used"
-msgstr "Choisir parmi les plus utilisés"
-
-#: inc/fs-cpt.php:151
+#: inc/fs-cpt.php:143
 msgid "Popular Slide Category"
 msgstr "Catégorie de slide populaire"
 
-#: inc/fs-cpt.php:152
+#: inc/fs-cpt.php:144
 msgid "Search Slide Category"
 msgstr "Rechercher une catégorie de slide"
 
-#: inc/fs-cpt.php:153
-msgid "Not Found"
-msgstr "Introuvable"
-
-#: inc/fs-cpt.php:169
+#: inc/fs-cpt.php:160
 msgctxt "Taxonomy General Name"
 msgid "Services Categories"
 msgstr "Catégories de services"
 
-#: inc/fs-cpt.php:170
+#: inc/fs-cpt.php:161
 msgctxt "Taxonomy Singular Name"
 msgid "Services Category"
 msgstr "Catégorie de services"
 
-#: inc/fs-cpt.php:171
+#: inc/fs-cpt.php:162
 msgid "Services Categories"
 msgstr "Catégories de services"
 
@@ -260,35 +224,57 @@ msgstr "Logo blanc du site"
 msgid "White version of your logo for the home page."
 msgstr "Version blanche de votre logo pour la page d'accueil."
 
-#: inc/plugin-update-checker/Puc/v4p1/Plugin/UpdateChecker.php:358
+#: inc/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:395
 msgid "Check for updates"
 msgstr "Vérifier les mises à jour"
 
-#: inc/plugin-update-checker/Puc/v4p1/Plugin/UpdateChecker.php:405
+#: inc/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:432
+msgid "View details"
+msgstr "Voir les détails"
+
+#: inc/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:455
+#, php-format
+msgid "More information about %s"
+msgstr "Plus d'informations sur %s"
+
+#: inc/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:548
 #, php-format
 msgctxt "the plugin title"
 msgid "The %s plugin is up to date."
 msgstr "L'extension %s est à jour."
 
-#: inc/plugin-update-checker/Puc/v4p1/Plugin/UpdateChecker.php:407
+#: inc/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:550
 #, php-format
 msgctxt "the plugin title"
 msgid "A new version of the %s plugin is available."
 msgstr "Une nouvelle version de l'extension %s est disponible."
 
-#: inc/plugin-update-checker/Puc/v4p1/Plugin/UpdateChecker.php:409
+#: inc/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:552
+#, php-format
+msgctxt "the plugin title"
+msgid "Could not determine if updates are available for %s."
+msgstr "Impossible de déterminer si des mises à jour sont disponibles pour %s."
+
+#: inc/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:558
 #, php-format
 msgid "Unknown update checker status \"%s\""
 msgstr "Statut inconnu du vérificateur de mise à jour \"%s\""
 
-#: inc/plugin-update-checker/Puc/v4p1/Vcs/PluginUpdateChecker.php:83
+#: inc/plugin-update-checker/Puc/v4p4/Vcs/PluginUpdateChecker.php:98
 msgid "There is no changelog available."
 msgstr "Il n'y a aucun historique des mises à jour disponible."
 
-#: template-parts/content-cpt.php:35
-#, php-format
-msgid "Continue reading %s"
-msgstr "Lire la suite de l'article %s"
+#: template-parts/block-cpt.php:17
+msgid "Learn More"
+msgstr "En savoir plus"
+
+#: template-parts/front-cpt.php:45
+msgid "See All"
+msgstr "Tout voir"
+
+#: template-parts/front-slider.php:66
+msgid "Scroll Down"
+msgstr "Faire défiler vers le bas"
 
 #: template-parts/header-logo.php:14
 msgid "Go to Home Page"
@@ -309,6 +295,39 @@ msgstr "Thomas Villain"
 #. Author URI of the plugin/theme
 msgid "https://anybodesign.com/"
 msgstr "https://anybodesign.com/"
+
+#. Template Name of the plugin/theme
+msgid "Custom content page"
+msgstr "Page de contenu personnalisé"
+
+#. Template Name of the plugin/theme
+msgid "Maintenance"
+msgstr "Maintenance"
+
+#~ msgid "Add New"
+#~ msgstr "Ajouter"
+
+#~ msgid "Not found"
+#~ msgstr "Introuvable"
+
+#~ msgid "Not found in Trash"
+#~ msgstr "Introuvable dans la corbeille"
+
+#~ msgid "Separate items with commas"
+#~ msgstr "Séparer les éléments par des virgules"
+
+#~ msgid "Add or remove items"
+#~ msgstr "Ajouter ou supprimer des éléments"
+
+#~ msgid "Choose from the most used"
+#~ msgstr "Choisir parmi les plus utilisés"
+
+#~ msgid "Not Found"
+#~ msgstr "Introuvable"
+
+#, php-format
+#~ msgid "Continue reading %s"
+#~ msgstr "Lire la suite de l'article %s"
 
 #~ msgid "Parent service:"
 #~ msgstr "Service parent :"
@@ -434,9 +453,6 @@ msgstr "https://anybodesign.com/"
 
 #~ msgid "Add my comment!"
 #~ msgstr "Ajouter mon commentaire !"
-
-#~ msgid "Main Menu"
-#~ msgstr "Menu principal"
 
 #~ msgid "Footer Menu"
 #~ msgstr "Menu pied de page"
