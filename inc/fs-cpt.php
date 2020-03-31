@@ -19,8 +19,6 @@ function fs_rewrite_flush() {
 add_action( 'after_switch_theme', 'fs_rewrite_flush' );
 
 
-
-
 // Post Types
 
 function fs_custom_posts() {
@@ -52,11 +50,11 @@ function fs_custom_posts() {
 	$args = array(
 		'label'					=> __( 'Services', 'fs-company' ),
 		//'description'			=> __( 'Our Services', 'fs-company' ),
-		'labels'				=> $labels,
+		'labels'					=> $labels,
 		'supports'				=> array( 'title', 'editor', 'thumbnail', 'revisions'),
 		'taxonomies'			=> array(),
 		'hierarchical'			=> false,
-		'public'				=> true,
+		'public'					=> true,
 		'show_ui'				=> true,
 		'show_in_menu'			=> true,
 		'show_in_nav_menus'		=> true,
@@ -99,11 +97,11 @@ function fs_custom_posts() {
 	$args_slide = array(
 		'label'					=> __( 'Slides', 'fs-company' ),
 		'description'			=> __( 'The Slides', 'fs-company' ),
-		'labels'				=> $labels_slide,
+		'labels'					=> $labels_slide,
 		'supports'				=> array( 'title', 'editor', 'thumbnail', 'revisions'),
 		'taxonomies'			=> array(),
 		'hierarchical'			=> false,
-		'public'				=> true,
+		'public'					=> true,
 		'show_ui'				=> true,
 		'show_in_menu'			=> true,
 		'show_in_nav_menus'		=> true,
@@ -155,23 +153,23 @@ function fs_custom_taxonomies() {
 	);
 	register_taxonomy( 'slide-category', array( 'slide' ), $args );	
 
-
+	/*
 	$labels = array(
 		'name'							=> _x( 'Services Categories', 'Taxonomy General Name', 'fs-company' ),
 		'singular_name'					=> _x( 'Services Category', 'Taxonomy Singular Name', 'fs-company' ),
 		'menu_name'						=> __( 'Services Categories', 'fs-company' ),
-		/*
-		'all_items'						=> __( 'All Services Categories', 'fs-company' ),
-		'parent_item'					=> __( 'Parent Services Category', 'fs-company' ),
-		'parent_item_colon'				=> __( 'Parent Services Category:', 'fs-company' ),
-		'new_item_name'					=> __( 'New Services Category', 'fs-company' ),
-		'add_new_item'					=> __( 'Add New Services Category', 'fs-company' ),
-		'edit_item'						=> __( 'Edit Services Category', 'fs-company' ),
-		'update_item'					=> __( 'Update Services Category', 'fs-company' ),
-		'view_item'						=> __( 'View Services Category', 'fs-company' ),
-		'popular_items'					=> __( 'Popular Services Category', 'fs-company' ),
-		'search_items'					=> __( 'Search Services Category', 'fs-company' ),
-		*/
+		
+		//'all_items'						=> __( 'All Services Categories', 'fs-company' ),
+		//'parent_item'					=> __( 'Parent Services Category', 'fs-company' ),
+		//'parent_item_colon'				=> __( 'Parent Services Category:', 'fs-company' ),
+		//'new_item_name'					=> __( 'New Services Category', 'fs-company' ),
+		//'add_new_item'					=> __( 'Add New Services Category', 'fs-company' ),
+		//'edit_item'						=> __( 'Edit Services Category', 'fs-company' ),
+		//'update_item'					=> __( 'Update Services Category', 'fs-company' ),
+		//'view_item'						=> __( 'View Services Category', 'fs-company' ),
+		//'popular_items'					=> __( 'Popular Services Category', 'fs-company' ),
+		//'search_items'					=> __( 'Search Services Category', 'fs-company' ),
+		
 	);
 	$args = array(
 		'labels'				=> $labels,
@@ -184,7 +182,7 @@ function fs_custom_taxonomies() {
 		//'rewrite'				=> array( 'slug' => 'creations' ),		
 	);
 	register_taxonomy( 'service-category', array( 'service' ), $args );	
-
+	*/
 }
 add_action( 'init', 'fs_custom_taxonomies', 0 );
 

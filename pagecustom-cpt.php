@@ -8,53 +8,45 @@
  */
 get_header(); ?>
 
-				<main id="primary" class="content-area" role="main">
-				
-				<?php while ( have_posts() ) : the_post(); ?>
-				
-					<?php get_template_part( 'template-parts/page', 'banner' ); ?>
-
-					<?php get_template_part( 'template-parts/page', 'content' ); ?>
-
-				<?php endwhile; ?>
-					
-				<?php 
-					
-					// Custom Post type Loop 
-					
-					$args_cpt = array(
-						'posts_per_page' 	=> -1,
-						'post_type' 		=> 'service',
-						'order'				=> 'DESC'
-					);
-					$query_cpt = new WP_Query($args_cpt);
-				?>						
+			<?php while ( have_posts() ) : the_post(); ?>
 			
-				<?php if ($query_cpt->have_posts()) : ?>
+				<?php get_template_part( 'template-parts/page', 'banner' ); ?>
 
-					<div class="row x-center inner">
-						
-						<?php while ($query_cpt->have_posts()) : $query_cpt->the_post(); ?>
-						<div class="col-4">
-							<?php get_template_part( 'template-parts/content','cpt' ); ?>
-						</div>					
-						<?php endwhile; ?>
-						
-					</div>
+				<?php get_template_part( 'template-parts/page', 'content' ); ?>
+
+			<?php endwhile; ?>
 				
-				<?php else: ?>
+			<?php 
 				
-					<div class="row inner">
-						
-						<?php get_template_part( 'template-parts/content', 'none' ); ?>
-						
-					</div>
+				// Custom Post type Loop 
 				
-				<?php endif; ?>
-				<?php wp_reset_postdata(); ?>
+				$args_cpt = array(
+					'posts_per_page' 	=> -1,
+					'post_type' 		=> 'service',
+					'order'				=> 'DESC'
+				);
+				$query_cpt = new WP_Query($args_cpt);
+			?>						
+		
+			<?php if ($query_cpt->have_posts()) : ?>
 
-				</main> <?php // END primary ?>
-
-
+				<div class="row inner">
+					
+					<?php while ($query_cpt->have_posts()) : $query_cpt->the_post(); ?>
+						<?php get_template_part( 'template-parts/block','cpt' ); ?>
+					<?php endwhile; ?>
+					
+				</div>
+			
+			<?php else: ?>
+			
+				<div class="row inner">
+					
+					<?php get_template_part( 'template-parts/content', 'none' ); ?>
+					
+				</div>
+			
+			<?php endif; ?>
+			<?php wp_reset_postdata(); ?>
 
 <?php get_footer(); ?>
