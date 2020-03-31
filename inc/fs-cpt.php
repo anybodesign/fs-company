@@ -68,7 +68,8 @@ function fs_custom_posts() {
 		'exclude_from_search'	=> false,
 		'publicly_queryable'	=> true,
 		'rewrite'				=> $rewrite,
-		'capability_type'		=> 'post'
+		'capability_type'		=> 'post',
+		'show_in_rest'			=>	true
 	);	
 	register_post_type( 'service', $args);
 	
