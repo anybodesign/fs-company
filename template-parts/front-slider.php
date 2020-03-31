@@ -68,5 +68,8 @@
 						</div>
 					</div>
 					
+					<?php else: ?>
+					<?php get_template_part( 'template-parts/page', 'banner' ); ?>
+					
 					<?php endif; ?>
 					<?php wp_reset_postdata(); ?>
