@@ -12,6 +12,7 @@
  
 function fs_company_customize_register($wp_customize) {
 
+	
 	// Add Front Page Section
 
 	$wp_customize->add_section('fs_cpt_section', array(
@@ -59,6 +60,7 @@ function fs_company_customize_register($wp_customize) {
 		'settings'		=> 'cpt_slug',
 	));	
 
+
 	// Display CPT
 	
 	$wp_customize->add_setting('display_cpt', array(
@@ -71,6 +73,7 @@ function fs_company_customize_register($wp_customize) {
 		'section'		=> 'fs_cpt_section',
 		'settings'		=> 'display_cpt',
 	));
+
 	
 	// CPT page
 	
@@ -80,11 +83,12 @@ function fs_company_customize_register($wp_customize) {
 	));
 	$wp_customize->add_control( 'select_cpt_page', array(
 	  'type' 			=> 'dropdown-pages',
-	  'section' 		=> 'fs_cpt_section', 
+	  'section'			=> 'fs_cpt_section', 
 	  'label'			=> __( 'Custom Posts Page', 'fs-company' ),
 	  'description' 	=> __( 'Select the page for your custom posts.', 'fs-company' ),
-	  'settings'		=> 'select_cpt_page',
+	  'settings'			=> 'select_cpt_page',
 	));
+
 
 	// CPT button text
 	
@@ -104,6 +108,7 @@ function fs_company_customize_register($wp_customize) {
 	
 	// Tax Names 
 	
+/*
 	$wp_customize->add_setting('tax_name_text', array(
 		'default'				=> '',
 		'sanitize_callback'		=> 'sanitize_text_field'
@@ -133,6 +138,7 @@ function fs_company_customize_register($wp_customize) {
 		'section'		=> 'fs_tax_section',
 		'settings'		=> 'tax_slug',
 	));
+*/
 
 
 	// Site logo white
