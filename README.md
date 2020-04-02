@@ -4,6 +4,10 @@ A WordPress Child Theme of FS-Blog for your company. Made with From Scratch, a s
 
 ## Changelog
 
+### 1.5.2 - 2020-04-01
+* CPT: Display with no services
+* Slick update - a11y improvments
+
 ### 1.5.1 - 2020-04-01
 * Fullscreen videos for slider
 
