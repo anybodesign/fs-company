@@ -1,21 +1,24 @@
 <?php if ( !defined('ABSPATH') ) die();
 
+define( 'FSCHILD_THEME_DIR', get_stylesheet_directory() );
+define( 'FSCHILD_THEME_URL', get_stylesheet_directory_uri() );
+
 
 // I18n
 
-load_theme_textdomain( 'fs-company', get_stylesheet_directory() . '/languages' );
+load_theme_textdomain( 'fs-company', FSCHILD_THEME_DIR . '/languages' );
 
 
 
 // The Custom Post Type & Slider
 
-require get_stylesheet_directory() . '/inc/fs-cpt.php';
+require FSCHILD_THEME_DIR . '/inc/fs-cpt.php';
 
 
 
 // Customizer
 
-require get_stylesheet_directory() . '/inc/fsc-customizer.php';
+require FSCHILD_THEME_DIR . '/inc/fsc-customizer.php';
 
 
 
@@ -33,14 +36,14 @@ function fs_company_scripts_load() {
 
 			wp_enqueue_script(
 				'slick', 
-				get_stylesheet_directory_uri() . '/js/slick.min.js', 
+				FSCHILD_THEME_URL . '/js/slick.min.js', 
 				array('jquery'), 
-				'1.8.0', 
+				'1.9.0', 
 				true
 			);
 			wp_enqueue_script(
 				'slick-init', 
-				get_stylesheet_directory_uri() . '/js/init-slick.js', 
+				FSCHILD_THEME_URL . '/js/slick-init.js', 
 				array('slick'), 
 				false, 
 				true
@@ -48,7 +51,7 @@ function fs_company_scripts_load() {
 
 			wp_enqueue_script(
 				'scrollto', 
-				get_stylesheet_directory_uri() . '/js/scrollto.js', 
+				FSCHILD_THEME_URL . '/js/scrollto.js', 
 				array('jquery'), 
 				false, 
 				true
@@ -65,7 +68,7 @@ function fs_company_scripts_load() {
 			
 			wp_enqueue_style( 
 				'slick', 
-				get_stylesheet_directory_uri() . '/css/slick.css',
+				FSCHILD_THEME_URL . '/css/slick.css',
 				array(), 
 				false, 
 				'screen' 
@@ -78,7 +81,7 @@ function fs_company_scripts_load() {
 
 		wp_enqueue_style( 
 			'parent-style', 
-			get_template_directory_uri() . '/style.css',
+			FS_THEME_URL . '/style.css',
 			array(),
 			false,
 			'screen'
