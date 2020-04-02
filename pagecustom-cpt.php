@@ -38,14 +38,6 @@ get_header(); ?>
 					
 				</div>
 			
-			<?php else: ?>
-			
-				<div class="row inner">
-					
-					<?php get_template_part( 'template-parts/content', 'none' ); ?>
-					
-				</div>
-			
 			<?php endif; ?>
 			<?php wp_reset_postdata(); ?>
 
