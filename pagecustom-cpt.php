@@ -20,8 +20,7 @@ get_header(); ?>
 				
 				$args_cpt = array(
 					'posts_per_page' 	=> -1,
-					'post_type' 		=> 'service',
-					'order'				=> 'DESC'
+					'post_type' 		=> 'service'
 				);
 				$query_cpt = new WP_Query($args_cpt);
 			?>						

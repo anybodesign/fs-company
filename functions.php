@@ -29,9 +29,6 @@ function fs_company_scripts_load() {
 
 		// JS 
 		
-		wp_enqueue_script( 'jquery' );
-
-
 		if ( is_front_page() || is_page_template('pagecustom-maintenance.php') ) {
 
 			wp_enqueue_script(
