@@ -7,7 +7,7 @@
 ?>
 
 				<div class="front-edito" id="front_edito">
-					<div class="row inner">
+					<div class="inner">
 	
 					<?php while ( have_posts() ) : the_post(); ?>
 						<?php the_content(); ?>
