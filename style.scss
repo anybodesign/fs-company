@@ -199,12 +199,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	}	 
 }
 .front-slider-text {
+	max-width: $max-width/1.5;
+	margin: 0 auto;
 	
 	p {
-		max-width: 75%;
-		margin-left: auto;
-		margin-right: auto;
-			
 		@include rwd(large) {
 			font-size: 2.4rem;
 		}
@@ -324,6 +322,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 #front_cpt {
 	margin: 2em 0;
+	
+	.row {
+		justify-content: center;
+		padding-bottom: $grid-padding*2;
+	}
 }
 .front-cpt,
 .front-edito {
