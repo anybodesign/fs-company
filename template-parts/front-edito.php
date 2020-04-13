@@ -6,7 +6,7 @@
  */
 ?>
 
-				<div class="front-edito" id="front_edito">
+				<div class="front-section" id="front_edito">
 					<div class="inner">
 	
 					<?php while ( have_posts() ) : the_post(); ?>

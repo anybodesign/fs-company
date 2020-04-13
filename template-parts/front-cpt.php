@@ -22,7 +22,7 @@
 				
 					<?php if ($query_cpt->have_posts()) : ?>
 					
-					<div class="front-cpt" id="front_cpt">
+					<div class="front-section" id="front_cpt">
 
 						<div class="row inner">
 							<?php
