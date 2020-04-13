@@ -1,0 +1,60 @@
+/* ------------------------- */
+/* = Header
+/* ------------------------- */
+
+#site_head {
+	
+	.home &,
+	.page-template-pagecustom-maintenance & {
+		position: absolute;
+		width: 100%;
+		background-color: #fff;
+		z-index: 100;
+	}
+	
+	
+	@include rwd(large) {
+		
+		.home &,
+		.page-template-pagecustom-maintenance & {
+			background-color: transparent;
+			border-bottom: rgba(255,255,255,0.4) 1px solid;
+		}
+	}
+}
+
+.site-title {
+	
+	span {
+
+		@include rwd(large) {
+			.home &,
+			.page-template-pagecustom-maintenance & {
+				color: #fff;
+			}
+		}
+	}
+}
+
+.site-desc {
+	@include rwd(large) {
+		.home &,
+		.page-template-pagecustom-maintenance & {
+			color: #fff;
+		}
+	}
+}
+
+// logo
+
+.logo-white {
+	display: none;
+}
+@include rwd(large) {
+	
+	.home,
+	.page-template-pagecustom-maintenance {
+		.logo-white { display: block; }
+		.logo { display: none; }
+	}
+}
