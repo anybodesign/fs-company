@@ -19,6 +19,10 @@ If you want to create a special page pour the custom posts, then choose the righ
 
 ## Changelog
 
+### 1.5.5 - 2020.04.20
+* Customizer live previews
+* Header logo fix
+
 ### 1.5.4 - 2020.04.13
 * SASS cleanup
 * Full height slider fix
