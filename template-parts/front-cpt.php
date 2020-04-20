@@ -27,7 +27,7 @@
 						<div class="row inner">
 							<?php
 								$obj = get_post_type_object( 'service' );
-								echo '<h2 class="front-section-title">' . $obj->labels->name . '</h2>';
+								echo '<h2 class="front-section-title cpt-title">' . $obj->labels->name . '</h2>';
 							?>
 							<?php while ($query_cpt->have_posts()) : $query_cpt->the_post(); ?>
 								<?php get_template_part( 'template-parts/block','cpt' ); ?>
@@ -38,7 +38,7 @@
 						<div class="row inner">
 							<?php $ctp_link = get_theme_mod('select_cpt_page'); ?>
 							
-							<a href="<?php echo get_permalink($ctp_link); ?>" class="action-btn">
+							<a href="<?php echo get_permalink($ctp_link); ?>" class="action-btn cpt-btn">
 								<?php if(get_theme_mod('cpt_btn_text')) {
 									echo get_theme_mod('cpt_btn_text'); 
 								} else {
