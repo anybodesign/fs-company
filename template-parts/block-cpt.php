@@ -13,7 +13,7 @@
 				<article id="post-<?php the_ID(); ?>" <?php post_class('custom-post-block'); ?>>
 					<a href="<?php the_permalink(); ?>">
 						<div class="custom-post-figure">
-							<?php the_post_thumbnail('large'); ?>
+							<?php the_post_thumbnail('screen-md'); ?>
 							<span><?php _e('Learn More', 'fs-company'); ?></span>
 						</div>
 						<h3 class="custom-post-title">
