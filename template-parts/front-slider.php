@@ -65,7 +65,7 @@
 								}
 							?>
 							<a href="<?php echo $scroll; ?>" class="scroll-btn" title="<?php _e('Scroll Down','fs-company'); ?>">
-								<img src="<?php echo FSCHILD_THEME_URL; ?>/img/slick-arrow.svg" alt="">
+								<img src="<?php echo FSCHILD_THEME_URL; ?>/img/slick-arrow-2.svg" alt="">
 							</a>
 						</div>
 					</div>

@@ -7,7 +7,7 @@ jQuery(document).ready(function($) {
 	var $prev;	
 	
 	$slick_slider = $('.front-slider');
-	$sliderbtn = '<img src="/wp-content/themes/fs-company/img/slick-arrow.svg" alt="">';
+	$sliderbtn = '<img src="/wp-content/themes/fs-company/img/slick-arrow-2.svg" alt="">';
 	
 	if ( $('html').attr('lang') === 'fr-FR' ) {
 		$next = 'Panneau suivant';
