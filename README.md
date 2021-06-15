@@ -19,6 +19,11 @@ If you want to create a special page pour the custom posts, then choose the righ
 
 ## Changelog
 
+### 1.6 - 2021.06.15
+* Service custom thumbnail
+* Header title color fix on homepage
+* New arrow icon
+
 ### 1.5.5 - 2020.04.20
 * Customizer live previews
 * Header logo fix

@@ -2,3 +2,4 @@
 /.sass-cache/
 /config.codekit3
 .nova
+prepros.config
