@@ -11,13 +11,13 @@
 
 get_header(); ?>
 
-			<?php // SLIDER ?>
-			<?php get_template_part( 'template-parts/front', 'slider' ); ?>
+			<?php // SLIDER
+				get_template_part( 'template-parts/front', 'slider' ); ?>
 				
-			<?php // CUSTOM POSTS ?>
-			<?php get_template_part( 'template-parts/front', 'cpt' ); ?>
+			<?php // CUSTOM POSTS
+				get_template_part( 'template-parts/front', 'cpt' ); ?>
 
-			<?php // PAGE CONTENT ?>
-			<?php get_template_part( 'template-parts/front', 'edito' ); ?>
+			<?php // PAGE CONTENT
+				get_template_part( 'template-parts/front', 'edito' ); ?>
 
 <?php get_footer(); ?>

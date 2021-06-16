@@ -6,7 +6,6 @@
 	
 	.home &,
 	.page-template-pagecustom-maintenance & {
-		position: absolute;
 		width: 100%;
 		background-color: #fff;
 		z-index: 100;
@@ -17,6 +16,7 @@
 		
 		.home &,
 		.page-template-pagecustom-maintenance & {
+			position: absolute;
 			background-color: transparent;
 			border-bottom: rgba(255,255,255,0.4) 1px solid;
 		}
@@ -56,5 +56,20 @@
 	.page-template-pagecustom-maintenance {
 		.logo-white { display: block; }
 		.logo { display: none; }
+	}
+}
+
+
+// Banner
+
+.page-banner {
+	
+	@include rwd(large) {
+		.home & {
+			
+			.page-banner-title {
+				padding-top: 8rem;
+			}	
+		}
 	}
 }
