@@ -19,6 +19,10 @@ If you want to create a special page pour the custom posts, then choose the righ
 
 ## Changelog
 
+### 1.6.1 - 2021.06.16
+* Banner height fix
+* Maintenance page fix
+
 ### 1.6 - 2021.06.15
 * Service custom thumbnail
 * Header title color fix on homepage
