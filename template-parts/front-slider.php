@@ -6,72 +6,57 @@
  */
 ?>
 
-					<?php 
-						
-						// Slider Loop 
-						
-						$args_slider = array(
-							'posts_per_page' 	=> -1,
-							'post_type' 		=> 'slide',
-							'order'				=> 'ASC'
-						);
-						$query_slider = new WP_Query($args_slider);
-					?>						
-				
-					<?php if ($query_slider->have_posts()) : ?>
+				<?php
+					
+					// Slider Loop 
+					
+					$args_slider = array(
+						'posts_per_page' 	=> -1,
+						'post_type' 		=> 'slide',
+						'order'				=> 'ASC'
+					);
+					$query_slider = new WP_Query($args_slider);
+				?>						
+
+				<?php if ( $query_slider->have_posts() || is_page_template( 'pagecustom-maintenance.php' ) ) { ?>
 						
 					<div id="fullpage">
 						<div class="fullpage-section">
-												
+							
 							<div class="front-slider">
-		
-								<?php while ($query_slider->have_posts()) : $query_slider->the_post(); ?>
-
-									<?php if ( '' != get_the_post_thumbnail() ) { 
-										$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large' ); 
-									} ?>
+								
+							<?php 
+								if ( is_page_template( 'pagecustom-maintenance.php' ) ) { 
 									
-									<?php 
-									$slide_cats = get_the_terms( $post->ID, 'slide-category' ); 
+									get_template_part( 'template-parts/front-slider', 'slide'); 
 									
-									if ( ! empty( $slide_cats ) ) {
-								    	$cat = $slide_cats[0]->slug;
-									}
-									?>
+								} else {
 									
-		                            <?php if (wp_is_mobile()) {
-		                                $mob = 'mobile';
-		                            } else {
-		                                $mob = 'desktop';
-		                            } ?>
-																		
-									<div class="front-slider-item <?php echo esc_html($cat); ?> <?php echo esc_html($mob); ?>" style="background-image: url(<?php echo $large_image_url[0]; ?>)">
-										<div class="front-slider-content">
-											<h2 class="front-slider-title"><?php the_title(); ?></h2>
-											<div class="front-slider-text">
-												<?php the_content(); ?>
-											</div>
-										</div>
-									</div>
-	
-								<?php endwhile; ?>
-		
+									while ( $query_slider->have_posts()) : $query_slider->the_post();
+									get_template_part( 'template-parts/front-slider', 'slide');
+									endwhile; 
+								}
+							?>
+								
 							</div>
 							
-							<?php if(get_theme_mod('display_cpt') != false) { 
+							<?php if ( get_theme_mod('display_cpt') != false ) { 
 								$scroll = '#front_cpt';
 								} else {
 								$scroll = '#front_edito';	
 								}
 							?>
+							<?php if ( ! is_page_template( 'pagecustom-maintenance.php' ) ) { ?>
 							<a href="<?php echo $scroll; ?>" class="scroll-btn" title="<?php _e('Scroll Down','fs-company'); ?>">
 								<img src="<?php echo FSCHILD_THEME_URL; ?>/img/slick-arrow-2.svg" alt="">
 							</a>
+							<?php } ?>
 						</div>
 					</div>
 					
-					<?php else: ?>
+				<?php } else { ?>
+				
 					<?php get_template_part( 'template-parts/page', 'banner' ); ?>
 					
-					<?php endif; ?>
-					<?php wp_reset_postdata(); ?>
+				<?php } ?>
+				<?php wp_reset_postdata(); ?>
