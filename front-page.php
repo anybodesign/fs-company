@@ -18,6 +18,9 @@ get_header(); ?>
 				get_template_part( 'template-parts/front', 'cpt' ); ?>
 
 			<?php // PAGE CONTENT
-				get_template_part( 'template-parts/front', 'edito' ); ?>
+				if ( has_blocks( $post->post_content ) ) {
+					get_template_part( 'template-parts/front', 'edito' );
+				}
+			?>
 
 <?php get_footer(); ?>

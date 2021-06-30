@@ -34,7 +34,8 @@
 									
 									while ( $query_slider->have_posts()) : $query_slider->the_post();
 									get_template_part( 'template-parts/front-slider', 'slide');
-									endwhile; 
+									endwhile;
+									wp_reset_postdata(); 
 								}
 							?>
 								
@@ -46,7 +47,7 @@
 								$scroll = '#front_edito';	
 								}
 							?>
-							<?php if ( ! is_page_template( 'pagecustom-maintenance.php' ) ) { ?>
+							<?php if ( (has_blocks( $post->post_content ) || get_theme_mod('display_cpt') != false) && ! is_page_template( 'pagecustom-maintenance.php' ) ) { ?>
 							<a href="<?php echo $scroll; ?>" class="scroll-btn" title="<?php _e('Scroll Down','fs-company'); ?>">
 								<img src="<?php echo FSCHILD_THEME_URL; ?>/img/slick-arrow-2.svg" alt="">
 							</a>
