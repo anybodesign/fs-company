@@ -19,6 +19,10 @@ If you want to create a special page pour the custom posts, then choose the righ
 
 ## Changelog
 
+### 1.6.2 - 2021.06.30
+* Check if the content exists on the front page
+* Slider CSS fix
+
 ### 1.6.1 - 2021.06.16
 * Banner height fix
 * Maintenance page fix
