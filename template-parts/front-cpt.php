@@ -10,10 +10,20 @@
 					
 					<?php 
 						
+						$nb = get_theme_mod('cpt_number');
+						$cols = get_theme_mod('cpt_cols');
+						$btn = get_theme_mod('display_btn');
+						
+						if ($cols) {
+							$col_nb = $cols;
+						} else {
+							$col_nb = 'col-3';
+						}
+						
 						// Custom Post type Loop 
 						
 						$args_cpt = array(
-							'posts_per_page' 	=> 6,
+							'posts_per_page' 	=> $nb,
 							'post_type' 		=> 'service',
 							'order'				=> 'DESC'
 						);
@@ -22,7 +32,7 @@
 				
 					<?php if ($query_cpt->have_posts()) : ?>
 					
-					<div class="front-section" id="front_cpt">
+					<div class="front-section <?php echo esc_attr($col_nb);?>" id="front_cpt">
 
 						<div class="row inner">
 							<?php
@@ -38,6 +48,7 @@
 						<div class="row inner">
 							<?php $ctp_link = get_theme_mod('select_cpt_page'); ?>
 							
+							<?php if ($btn == true) { ?>
 							<a href="<?php echo get_permalink($ctp_link); ?>" class="action-btn cpt-btn">
 								<?php if(get_theme_mod('cpt_btn_text')) {
 									echo get_theme_mod('cpt_btn_text'); 
@@ -45,6 +56,7 @@
 									echo _e('See All','fs-company'); 	
 								} ?>
 							</a>
+							<?php } ?>
 						</div>					
 						<?php } ?>
 
