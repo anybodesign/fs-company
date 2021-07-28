@@ -33,19 +33,17 @@ function fs_custom_posts() {
 		'name_admin_bar'		=> __( 'Services', 'fs-company' ),
 	);
 	$rewrite = array(
-		//'slug'					=> 'service',
 		'with_front'			=> true,
 		'pages'					=> true,
 		'feeds'					=> true,
 	);
 	$args = array(
 		'label'					=> __( 'Services', 'fs-company' ),
-		//'description'			=> __( 'Our Services', 'fs-company' ),
-		'labels'					=> $labels,
+		'labels'				=> $labels,
 		'supports'				=> array( 'title', 'editor', 'thumbnail', 'revisions'),
 		'taxonomies'			=> array(),
 		'hierarchical'			=> false,
-		'public'					=> true,
+		'public'				=> true,
 		'show_ui'				=> true,
 		'show_in_menu'			=> true,
 		'show_in_nav_menus'		=> true,
@@ -80,7 +78,6 @@ function fs_custom_posts() {
 		'search_items'			=> __( 'Search Slide', 'fs-company' ),
 	);
 	$rewrite_slide = array(
-		//'slug'					=> 'slide',
 		'with_front'			=> true,
 		'pages'					=> true,
 		'feeds'					=> true,
@@ -88,11 +85,11 @@ function fs_custom_posts() {
 	$args_slide = array(
 		'label'					=> __( 'Slides', 'fs-company' ),
 		'description'			=> __( 'The Slides', 'fs-company' ),
-		'labels'					=> $labels_slide,
+		'labels'				=> $labels_slide,
 		'supports'				=> array( 'title', 'editor', 'thumbnail', 'revisions'),
 		'taxonomies'			=> array(),
 		'hierarchical'			=> false,
-		'public'					=> true,
+		'public'				=> true,
 		'show_ui'				=> true,
 		'show_in_menu'			=> true,
 		'show_in_nav_menus'		=> true,
@@ -100,9 +97,9 @@ function fs_custom_posts() {
 		'menu_position'			=> 20,
 		'menu_icon'				=> 'dashicons-images-alt2',
 		'can_export'			=> true,
-		'has_archive'			=> true,
+		'has_archive'			=> false,
 		'exclude_from_search'	=> true,
-		'publicly_queryable'	=> true,
+		'publicly_queryable'	=> false,
 		'rewrite'				=> $rewrite_slide,
 		'capability_type'		=> 'post'
 	);	
@@ -133,14 +130,13 @@ function fs_custom_taxonomies() {
 		'search_items'					=> __( 'Search Slide Category', 'fs-company' ),
 	);
 	$args = array(
-		'labels'					=> $labels,
+		'labels'				=> $labels,
 		'hierarchical'			=> true,
-		'public'					=> true,
+		'public'				=> true,
 		'show_ui'				=> true,
 		'show_admin_column'		=> true,
 		'show_in_nav_menus'		=> true,
 		'show_tagcloud'			=> false,
-		//'rewrite'				=> array( 'slug' => 'creations' ),		
 	);
 	register_taxonomy( 'slide-category', array( 'slide' ), $args );	
 }
