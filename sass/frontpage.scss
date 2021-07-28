@@ -128,7 +128,7 @@
 		text-transform: uppercase;
 		padding: $grid-padding;
 		background-color: var(--primary_color);
-		color: #fff;
+		color: #fff !important;
 		font-family: $font-title;
 		text-decoration: none;
 		transition: background .2s ease-in-out;
