@@ -80,7 +80,6 @@ function fs_company_customize_register($fs_customize) {
 	
 	$fs_customize->add_setting('display_cpt', array(
 		'default'			=> false,
-		'transport'			=> 'postMessage',
 		'sanitize_callback'	=> 'fsc_customizer_sanitize_checkbox',				
 	));
 	$fs_customize->add_control('display_cpt', array(
@@ -89,6 +88,48 @@ function fs_company_customize_register($fs_customize) {
 		'section'		=> 'fs_cpt_section',
 		'settings'		=> 'display_cpt',
 	));
+	
+	$fs_customize->add_setting('display_cpt_after', array(
+		'default'			=> false,
+		'sanitize_callback'	=> 'fsc_customizer_sanitize_checkbox',				
+	));
+	$fs_customize->add_control('display_cpt_after', array(
+		'type'			=> 'checkbox',
+		'label'			=> __('Display your custom posts after the edito', 'fs-company'),
+		'section'		=> 'fs_cpt_section',
+		'settings'		=> 'display_cpt_after',
+	));
+	
+	$fs_customize->add_setting('cpt_number', array(
+		'default'				=> 3,
+		'sanitize_callback'		=> 'sanitize_text_field'
+	));
+	$fs_customize->add_control('cpt_number', array(
+		'type'			=> 'number',
+		'label'			=> __('Number of Custom Posts to display on the frontpage', 'fs-company'),
+		'section'		=> 'fs_cpt_section',
+		'settings'		=> 'cpt_number',
+	));
+	
+	$fs_customize->add_setting(
+		'cpt_cols', 
+		array(
+			'default' => 'col-3',
+			'sanitize_callback' => 'fs_customizer_sanitize_radio_layout',
+		)
+	);
+	$fs_customize->add_control(
+		'cpt_cols', 
+		array(
+			'type' => 'radio',
+			'label' => __( 'Number of columns', 'fs-company' ),
+			'section' => 'fs_cpt_section',
+			'choices' => array(
+				'col-3' => __( '3 columns', 'fs-company' ),
+				'col-4' => __( '4 columns', 'fs-company' ),
+			),
+		)
+	);
 
 	
 	// CPT page
@@ -106,7 +147,18 @@ function fs_company_customize_register($fs_customize) {
 	));
 
 
-	// CPT button text
+	// CPT button
+	
+	$fs_customize->add_setting('display_btn', array(
+		'default'			=> false,
+		'sanitize_callback'	=> 'fsc_customizer_sanitize_checkbox',				
+	));
+	$fs_customize->add_control('display_btn', array(
+		'type'			=> 'checkbox',
+		'label'			=> __('Display a button linking to your Custom Posts Archive', 'fs-company'),
+		'section'		=> 'fs_cpt_section',
+		'settings'		=> 'display_btn',
+	));
 	
 	$fs_customize->add_setting('cpt_btn_text', array(
 		'default'				=> '',
@@ -197,20 +249,11 @@ function fsc_customizer_sanitize_checkbox( $input ) {
 	return '';
 }
 
+// Radio 
 
-// Customizer Colors Output
-
-function fs_company_colors() {
-	?>
-	<style>
-		.front-slider-text a { 
-			background-color: <?php echo get_theme_mod('primary_color', '#9c0'); ?> 
-		}
-		.front-slider-text a:hover,
-		.front-slider-text a:focus { 
-			color: <?php echo get_theme_mod('primary_color', '#9c0'); ?> 
-		}
-	</style>
-	<?php
+function fs_customizer_sanitize_radio_layout( $input ) {
+    if( !in_array( $input, array( 'col-3', 'col-4' ) ) ) {
+        $input = 'col-3';
+    }
+    return $input;
 }
-add_action('wp_head','fs_company_colors');
