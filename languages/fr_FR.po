@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: From Scratch\n"
-"POT-Creation-Date: 2020-04-10 12:56+0200\n"
-"PO-Revision-Date: 2020-04-10 12:57+0200\n"
+"POT-Creation-Date: 2021-07-28 11:13+0200\n"
+"PO-Revision-Date: 2021-07-28 11:13+0200\n"
 "Last-Translator: Thomas Villain <atelier@anybodesign.com>\n"
 "Language-Team: Thomas Villain <atelier@anybodesign.com>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 2.4.3\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: style.css\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
@@ -158,59 +158,84 @@ msgstr "Vidéo"
 msgid "Native mp4 background video"
 msgstr "Vidéo d’arrière-plan native mp4"
 
-#: inc/fsc-customizer.php:19
+#: inc/fsc-customizer.php:31
 msgid "Custom Post Type"
 msgstr "Contenu personnalisé"
 
-#: inc/fsc-customizer.php:20
+#: inc/fsc-customizer.php:32
 msgid "Settings for your custom content"
 msgstr "Paramètres pour votre contenu personnalisé"
 
-#: inc/fsc-customizer.php:24
+#: inc/fsc-customizer.php:36
 msgid "Custom Taxonomy"
 msgstr "Taxonomie personnalisée"
 
-#: inc/fsc-customizer.php:25
+#: inc/fsc-customizer.php:37
 msgid "Settings for your custom taxonomy"
 msgstr "Paramètres pour votre taxonomie personnalisée"
 
-#: inc/fsc-customizer.php:38
+#: inc/fsc-customizer.php:51
 msgid "Custom Posts Name - Singular"
 msgstr "Contenu personnalisé au singulier"
 
-#: inc/fsc-customizer.php:48
+#: inc/fsc-customizer.php:62
 msgid "Custom Posts Name - Plural"
 msgstr "Contenu personnalisé au pluriel"
 
-#: inc/fsc-customizer.php:58
+#: inc/fsc-customizer.php:73
 msgid "Custom Posts Slug (lowercase)"
 msgstr "Identifiant du contenu personnalisé (minuscules)"
 
-#: inc/fsc-customizer.php:72
+#: inc/fsc-customizer.php:87
 msgid "Display your custom posts on the front page"
 msgstr "Afficher vos contenus personnalisés sur la page d'accueil"
 
-#: inc/fsc-customizer.php:87
+#: inc/fsc-customizer.php:98
+msgid "Display your custom posts after the edito"
+msgstr "Affichez vos publications personnalisées après l’édito"
+
+#: inc/fsc-customizer.php:109
+msgid "Number of Custom Posts to display on the frontpage"
+msgstr "Nombre de publications personnalisées à afficher sur la page d’accueil"
+
+#: inc/fsc-customizer.php:125
+msgid "Number of columns"
+msgstr "Nombre de colonnes"
+
+#: inc/fsc-customizer.php:128
+msgid "3 columns"
+msgstr "3 colonnes"
+
+#: inc/fsc-customizer.php:129
+msgid "4 columns"
+msgstr "4 colonnes"
+
+#: inc/fsc-customizer.php:144
 msgid "Custom Posts Page"
 msgstr "Page du contenu personnalisé"
 
-#: inc/fsc-customizer.php:88
+#: inc/fsc-customizer.php:145
 msgid "Select the page for your custom posts."
 msgstr "Sélectionner la page de vos contenus personnalisés."
 
-#: inc/fsc-customizer.php:100
+#: inc/fsc-customizer.php:158
+msgid "Display a button linking to your Custom Posts Archive"
+msgstr ""
+"Afficher un bouton en lien avec votre archive de publications personnalisées"
+
+#: inc/fsc-customizer.php:169
 msgid "Custom posts button text"
 msgstr "Intitulé du bouton des contenus personnalisés"
 
-#: inc/fsc-customizer.php:101
+#: inc/fsc-customizer.php:170
 msgid "Add a custom text for the \"See All\" button."
 msgstr "Ajouter un intitulé personnalisé pour le bouton \"Tout voir\"."
 
-#: inc/fsc-customizer.php:149
+#: inc/fsc-customizer.php:218
 msgid "Site White Logo"
 msgstr "Logo blanc du site"
 
-#: inc/fsc-customizer.php:150
+#: inc/fsc-customizer.php:219
 msgid "White version of your logo for the home page."
 msgstr "Version blanche de votre logo pour la page d'accueil."
 
@@ -258,17 +283,13 @@ msgstr "Il n'y a aucun historique des mises à jour disponible."
 msgid "Learn More"
 msgstr "En savoir plus"
 
-#: template-parts/front-cpt.php:45
+#: template-parts/front-cpt.php:54
 msgid "See All"
 msgstr "Tout voir"
 
-#: template-parts/front-slider.php:67
+#: template-parts/front-slider.php:51
 msgid "Scroll Down"
 msgstr "Faire défiler vers le bas"
-
-#: template-parts/header-logo.php:14
-msgid "Go to Home Page"
-msgstr "Aller à la page d'accueil"
 
 #. Theme Name of the plugin/theme
 msgid "FS Company"
@@ -293,6 +314,9 @@ msgstr "Page de contenu personnalisé"
 #. Template Name of the plugin/theme
 msgid "Maintenance"
 msgstr "Maintenance"
+
+#~ msgid "Go to Home Page"
+#~ msgstr "Aller à la page d'accueil"
 
 #~ msgctxt "Taxonomy General Name"
 #~ msgid "Services Categories"
