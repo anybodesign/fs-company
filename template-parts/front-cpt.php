@@ -25,7 +25,6 @@
 						$args_cpt = array(
 							'posts_per_page' 	=> $nb,
 							'post_type' 		=> 'service',
-							'order'				=> 'DESC'
 						);
 						$query_cpt = new WP_Query($args_cpt);
 					?>						
