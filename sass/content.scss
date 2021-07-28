@@ -11,40 +11,6 @@
 	}
 }
 
-.custom-post-content {
-	
-	// Centering Blocks and content
-	
-	& > * {
-		width: 100%;
-		padding: 0 $grid-padding;
-		@include center();
-	}
-	
-	& > *.alignwide {
-		max-width: $max-width*1.3;	// 1248px
-	}
-	& > *.alignfull {
-		margin-left: 0;
-		margin-right: 0;
-		max-width: none;
-	}
-	
-	& > [class*="wp-block-gallery"],
-	& > [class*="wp-block-cover-image"],
-	& > [class*="wp-block-quote"] {
-		@include center();
-		margin-bottom: $grid-padding*2;
-	}
-	& > [class*="wp-block-table"],
-	& > [class*="wp-block-verse"] {	
-		position: relative;
-		margin: $grid-padding*2 auto;
-		max-width: calc(#{$max-width} - #{$grid-padding}*2);
-	}
-}
-
-
 // Maintenance
 
 .page-template-pagecustom-maintenance {
