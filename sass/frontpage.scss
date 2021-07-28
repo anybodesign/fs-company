@@ -2,6 +2,15 @@
 // = Front-Page
 /* --------------------- */
 
+.page-banner + .front-section {
+	position: relative;
+	margin-top: -$grid-padding*2;
+	
+	@include rwd(large)	{
+		margin-top: -$grid-padding*4;
+	}
+}
+
 // Slider 
 
 #fullpage {
@@ -118,7 +127,7 @@
 		font-size: 1.8rem;
 		text-transform: uppercase;
 		padding: $grid-padding;
-		background-color: $primary-color;
+		background-color: var(--primary_color);
 		color: #fff;
 		font-family: $font-title;
 		text-decoration: none;
@@ -127,7 +136,7 @@
 		&:hover, 
 		&:focus {
 			background-color: #fff;
-			color: $primary-color;
+			color: var(--primary_color) !important;
 		}
 	}
 	
@@ -226,7 +235,7 @@
 // CPT & Edito
 
 #front_cpt {
-	margin: 2em 0;
+	padding: 2em 0;
 	
 	.row {
 		justify-content: center;
@@ -262,6 +271,10 @@
 	}
 	@include rwd(large) {
 		width: 33.3333%;
+		
+		.col-4 & {
+			width: 25%;
+		}
 	}
 
 	a {
@@ -306,7 +319,6 @@
 // Edito
 
 #front_edito {
-	margin-top: 0;
 	padding: $grid-padding*2 $grid-padding;
 	background-color: #eee;
 	
