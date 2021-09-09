@@ -19,9 +19,13 @@ If you want to create a special page pour the custom posts, then choose the righ
 
 ## Changelog
 
+### 1.7.2 - 2021.09.09
+* Main nav overlay on frontpage
+
 ### 1.7.1 - 2021.07.28
 * Slider CPT fix (no public query, no archive)
 * CPT loop order fix on frontpage
+* Single CPT fix
 * CSS fix
 
 ### 1.7 - 2021.07.28
